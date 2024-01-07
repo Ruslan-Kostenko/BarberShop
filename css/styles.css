@@ -1,0 +1,113 @@
+/* 
+.modal-form{
+    padding: 20px;
+    margin: 20px;
+    width: 600px;
+
+    outline: 1px solid teal;
+}
+
+.form-box{
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.form-lable{
+    top: 50%;
+    left: 40px;
+    transform: translateY(-50%);
+
+    transition: transform 250ms linear;
+}
+
+.form-input{
+    width: 100%;
+    margin: 0px;
+    padding: 10px 20px;
+    max-width: 550px;
+
+    border-radius: 3px;
+    border: 1px solid green;
+    outline: none;
+}
+
+.form-icon{
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+
+    width: 20px;
+    height: 20px;
+
+    border-radius: 4px;
+    border: 2px solid red;
+}
+
+.form-box:focus-within > .form-icon{
+    border: 1px solid yellowgreen;
+}
+
+.form-box:focus-within > .form-lable{
+    transform: translateX(50%);
+} */
+
+.form-lable{
+    display: flex;
+    align-items: center;
+}
+
+.form-input{
+    appearance: none;
+}
+
+.icon{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+    
+    border: 2px solid #000;
+    border-radius: 2px;
+
+}
+
+.form-input:checked + .icon{
+
+    border-color: green;
+    background-color: green;
+    background-image: url('../images/instagram_link.svg');
+    background-size: contain;
+    background-origin: border-box;
+}
+
+
+.lable{
+    transition: transform 500ms linear;
+}
+
+.form-input:checked ~ .lable{
+    transform: translateX(15px);
+}
+
+
+
+.form-btn{
+    padding: 5px;
+    width: 100px;
+    height: 35px;
+
+    color: cyan;
+    background-color: blue;
+
+    border-radius: 20px;
+    border: 2px solid cyan;
+}
+
+.form-btn:hover,
+.form-btn:focus{
+    color: rgb(3, 144, 144);
+    background-color: rgb(4, 4, 199);
+    border: 2px solid rgb(3, 144, 144);
+}
