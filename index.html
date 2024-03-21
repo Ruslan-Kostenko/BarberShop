@@ -36,7 +36,7 @@
               <a href="#" class="header-link link">Майстри</a>
             </li>
             <li class="header-item">
-              <a href="#" class="header-link link">Контакти</a>
+              <a href="#contact" class="header-link link">Контакти</a>
             </li>
           </ul>
         </nav>
@@ -389,25 +389,44 @@
       </section>
 
       <!-- Contacts section  -->
-      <section class="contacts section">
+      <section class="contacts section" id="contact">
         <div class="container contacts-box">
           <form class="contacts-form" action="/registred" method="post">
             <h2 class="contacts-form-title title">Онлайн-запис</h2>
-            <ul class="contacts-form-list list">
-              <li class="contacts-form-item">
-                <input type="text" value="ім`я*" />
-              </li>
-              <li class="contacts-form-item">
-                <input type="tel" value="Телефон*" />
-              </li>
-              <li class="contacts-form-item">
-                <input type="email" value="Повідомлення" />
-              </li>
-            </ul>
+            <div class="contacts-form-field-wrap">
+              <div class="contacts-form-field">
+                <input
+                  type="text"
+                  name="name"
+                  class="contacts-form-input form-input"
+                  placeholder="Ім`я*"
+                  required
+                />
+              </div>
+              <div class="contacts-form-field">
+                <input
+                  type="tel"
+                  name="tel"
+                  class="contacts-form-input form-input"
+                  placeholder="Телефон*"
+                  required
+                />
+              </div>
+            </div>
+            <div class="contacts-form-field">
+              <input
+                type="textarea"
+                name="message"
+                class="contacts-form-textarea form-input"
+                placeholder="Повідомлення"
+              />
+            </div>
+
             <button class="contacts-form-btn btn" type="submit">
               Відправити
             </button>
           </form>
+
           <address class="contacts-address">
             <h2 class="contacts-address-title title">Контакти</h2>
             <ul class="contacts-address-list list">
@@ -561,6 +580,57 @@
                 <a href="">Privacy Policy</a>
               </span>
             </label>
+          </div>
+
+          <div>
+            <label class="modal-label" for="radio-1">Size1</label>
+            <input type="radio" name="test" id="radio-1" value="op1" />
+
+            <label class="modal-label" for="radio-2">Size2</label>
+            <input type="radio" name="test" id="radio-2" value="op2" />
+
+            <label class="modal-label" for="radio-3">Size3</label>
+            <input type="radio" name="test" id="radio-3" value="op3" />
+
+            <label class="modal-label" for="radio-4">Size4</label>
+            <input type="radio" name="test" id="radio-4" value="op4" />
+          </div>
+
+          <div>
+            <input
+              class="form-checkbox visually-hidden"
+              type="checkbox"
+              name="test"
+              id="check-1"
+              value="option1"
+            />
+            <label class="form-label" for="check-1">
+              <span>
+                <svg class="checkbox-icon" width="10" height="8">
+                  <use href="./images/sprite.svg#modal-checkbox"></use>
+                </svg>
+              </span>
+              Privacy Policy
+            </label>
+
+            <!-- <label class="modal-label" for="radio-2">Color2</label>
+            <input type="checkbox" name="test" id="check-2" value="option2" />
+
+            <label class="modal-label" for="radio-3">Color3</label>
+            <input type="checkbox" name="test" id="check-3" value="option3" />
+
+            <label class="modal-label" for="radio-4">Color4</label>
+            <input type="checkbox" name="test" id="check-4" value="option4" /> -->
+          </div>
+
+          <div class="toggle">
+            <input
+              type="checkbox"
+              id="slide"
+              name="slide"
+              class="toggle-btn-box visually-hidden"
+            />
+            <label for="slide" class="toggle-btn"></label>
           </div>
 
           <button class="modal-btn" type="submit">Send</button>
