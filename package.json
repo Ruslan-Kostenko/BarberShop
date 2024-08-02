@@ -1,0 +1,20 @@
+{
+  "name": "barbershop",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build --base=/BarberShop/",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.3.4",
+    "glob": "^11.0.0"
+  },
+  "author": "Ruslan-Kostenko",
+  "dependencies": {
+    "vite-plugin-full-reload": "^1.2.0",
+    "vite-plugin-html-inject": "^1.1.2"
+  }
+}

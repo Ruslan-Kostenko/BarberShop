@@ -1,0 +1,239 @@
+
+@import url('./header.css');
+
+@import url('./hero.css');
+
+@import url('./about.css');
+
+@import url('./services.css');
+
+@import url('./features.css');
+
+@import url('./team.css');
+
+@import url('./portfolio.css');
+
+@import url('./contacts.css');
+
+@import url('./footer.css');
+
+@import url('./modal.css');
+
+
+:root {
+  --accent-color: #ff6c00;
+  --primary-title-color: #ffffff;
+  --secondary-title-color: #303030;
+  --main-text-color: #555555;
+  /* --background-page-color: #ffffff; */
+  /* --background-light-mode: #f4f4fd; */
+  /* --pressed-btn-color: #404bbf; */
+  /* --green-success-color: #31d0aa; */
+  /* --subtle-text-color: #8e8f99;  */
+  /* --modal-background-color: #FCFCFC; */
+  /* --modal-close-black:#000000; */
+  /* --transition-hover: 250ms cubic-bezier(0.4, 0, 0.2, 1) */
+  /* --modal-overlay-color: #2e2f42; 40% */
+
+  --basic-margin: 20px;
+  --section-padding: 130px 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+body {
+  font-family: Open Sans;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  color: #fff;
+  background-color: cadetblue;
+  /* background-color: var(--background-page-color); */
+}
+
+/* Components */
+
+.btn {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.36;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  color: #fff;
+  background-color: transparent;
+
+  min-width: 128px;
+  padding: 12px 20px;
+  border-radius: 25px;
+  border: 1px solid #ff6c00;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* transition-property: color, background;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
+}
+
+.btn:is(:hover, :focus) {
+  color: #fff;
+  background-color: var(--accent-color);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.section {
+  padding: var(--section-padding);
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+  outline: 1px solid yellow;
+}
+
+/* @media screen and (min-width: 480px) {
+    .container{
+      width: 480px;
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    .container{
+      width: 768px;
+    }
+  }
+  
+  @media screen and (min-width: 1200px) {
+    .container{
+      width: 1200px;
+    }
+  } */
+
+.subtitle {
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--basic-margin);
+
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.subtitle::before {
+  content: '';
+  display: inline-block;
+  margin-right: var(--basic-margin);
+  width: 60px;
+  height: 1px;
+  background-color: currentColor;
+}
+
+.title {
+  margin-bottom: var(--basic-margin);
+
+  font-family: 'Raleway', sans-serif;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.18;
+  letter-spacing: 0.05em;
+  color: #fff;
+}
+
+/* .section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  } */
+
+/* .section-title {
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--secondary-text-color);
+  } */
+
+/* .section-subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--secondary-text-color);
+  } */
+
+/* Dark and Light Lines */
+
+/* .subtitle-light {
+  display: flex;
+  align-items: center;
+}
+
+.subtitle-light::before {
+  margin-right: 20px;
+  display: block;
+  content: '';
+  width: 60px;
+  height: 1px;
+  background-color: rgba(157, 164, 189, 0.6);
+}
+
+.subtitle-dark {
+  display: flex;
+  align-items: center;
+}
+
+.subtitle-dark::before {
+  margin-right: 20px;
+  display: block;
+  content: '';
+  width: 60px;
+  height: 1px;
+  background-color: var(--primary-text-color);
+} */
