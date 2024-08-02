@@ -1,0 +1,17 @@
+/* --------Portfolio section ----------*/
+.portfolio {
+  background-color: teal;
+}
+.portfolio-subtitle {
+  color: #303030;
+
+  margin-bottom: 44px;
+}
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.portfolio-item {
+  width: calc((100% - 90px) / 4);
+}

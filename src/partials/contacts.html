@@ -1,0 +1,78 @@
+<section class="contacts section" id="contact">
+    <div class="container contacts-box">
+        <form class="contacts-form" action="/registred" method="post">
+        <h2 class="contacts-form-title title">Онлайн-запис</h2>
+        <div class="contacts-form-field-wrap">
+            <div class="contacts-form-field">
+            <input
+                type="text"
+                name="name"
+                class="contacts-form-input form-input"
+                placeholder="Ім`я*"
+                required
+            />
+            </div>
+            <div class="contacts-form-field">
+            <input
+                type="tel"
+                name="tel"
+                class="contacts-form-input form-input"
+                placeholder="Телефон*"
+                required
+            />
+            </div>
+        </div>
+        <div class="contacts-form-field">
+            <input
+            type="textarea"
+            name="message"
+            class="contacts-form-textarea form-input"
+            placeholder="Повідомлення"
+            />
+        </div>
+
+        <button class="contacts-form-btn btn" type="submit">
+            Відправити
+        </button>
+        </form>
+
+        <address class="contacts-address">
+        <h2 class="contacts-address-title title">Контакти</h2>
+        <ul class="contacts-address-list list">
+            <li class="contacts-address-item">
+            <svg class="team-barber-social-icon" width="24" height="24">
+                <use href="./img/sprite.svg#icon-map"></use>
+            </svg>
+            <a
+                class="contacts-address-link link"
+                href="https://maps.app.goo.gl/jriqerfnuqE2xRN37"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                >вул. Васильківська, 7А <br />
+                Київ, 08132</a
+            >
+            </li>
+            <li class="contacts-address-item">
+            <svg class="team-barber-social-icon" width="24" height="24">
+                <use href="./img/sprite.svg#icon-phone"></use>
+            </svg>
+            <a class="contacts-address-link link" href="tel:+380441111111"
+                >+38 044 111 11 11</a
+            >
+            </li>
+            <li class="contacts-address-item">
+            <svg class="team-barber-social-icon" width="24" height="24">
+                <use href="./img/sprite.svg#icon-mail"></use>
+            </svg>
+            <a
+                class="contacts-address-link link"
+                href="mailto:barbershop@email.com"
+                >barbershop@email.com</a
+            >
+            </li>
+        </ul>
+        <h3 class="contacts-address-work subtitle">Графік роботи</h3>
+        <p class="contacts-address-hours">Щоденно з 9:00 до 22:00</p>
+        </address>
+    </div>
+    </section>
