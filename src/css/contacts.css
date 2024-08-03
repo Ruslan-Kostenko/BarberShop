@@ -2,7 +2,7 @@
 .contacts {
   background: rgba(25, 28, 38, 1);
 
-  background-image: url(../img/Bg_contacts.png);
+  background-image: url('../img/Bg_contacts.png');
   background-repeat: no-repeat;
   background-position: right;
   background-size: 50% 100%;
